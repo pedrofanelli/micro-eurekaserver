@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy the JAR file into the container at /app
 COPY target/micro-eurekaserver-0.0.1-SNAPSHOT.jar /app/
 
-EXPOSE 8070
+EXPOSE 8761
 
 # Specify the command to run on container startup
 CMD ["java", "-jar", "micro-eurekaserver-0.0.1-SNAPSHOT.jar"]
